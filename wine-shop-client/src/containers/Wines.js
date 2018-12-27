@@ -1,32 +1,44 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React from 'react';
+// import { connect } from 'react-redux';
 
-import WineCard from '../components/WineCard';
-import WineForm from './WineForm';
-import { getWines } from '../actions/wines';
-import './Wines.css';
+const Wines = (props) => (
+  <div>
+    <h3>Wines</h3>
+    {props.wines.map(wine => <h1>(wine.name)</h1>)}
+  </div>
+);
 
-class Wines extends Component {
+export default Wines;
 
-  componentDidMount() {
-    this.props.getWines()
-  }
 
-  render() {
-    return (
-      <div className="WinesContainer">
-        <h1>Wines</h1>
-        {this.props.wines.map(wine => <WineCard key={wine.id} wine={wine} />)}
-        <WineForm />
-      </div>
-    );
-  }
-}
 
-const mapStateToProps = (state) => {
-  return ({
-    wines: state.wines
-  })
-}
 
- export default connect(mapStateToProps, { getWines })(Wines);
+// import WineCard from '../components/WineCard';
+// import WineForm from './WineForm';
+// import { getWines } from '../actions/wines';
+// import './Wines.css';
+//
+// class Wines extends Component {
+//
+//   componentDidMount() {
+//     this.props.getWines()
+//   }
+//
+//   render() {
+//     return (
+//       <div className="WinesContainer">
+//         <h1>Wines</h1>
+//         {this.props.wines.map(wine => <WineCard key={wine.id} wine={wine} />)}
+//         <WineForm />
+//       </div>
+//     );
+//   }
+// }
+//
+// const mapStateToProps = (state) => {
+//   return ({
+//     wines: state.wines
+//   })
+// }
+//
+//  export default connect(mapStateToProps, { getWines })(Wines);
