@@ -24,7 +24,7 @@ class WineForm extends Component {
 
     return (
       <div>
-        Add A Wine To The List
+        Add A Wine To The Store
         <form onSubmit={this.handleOnSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
