@@ -45,7 +45,7 @@ class WineForm extends Component {
             />
           </div>
           <div>
-            <label htmlFor="price">Price:</label>
+            <label htmlFor="price">Price: $</label>
             <input
               type="number"
               onChange={this.handleOnChange}
