@@ -32,10 +32,11 @@ export const createWine = wine => {
     return fetch(`${API_URL}/wines`, {
       method: "POST",
       headers: {
+        'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({ wine: wine })
-    })
+    }, wine)
       .then(response => response.json())
       .then(wine => {
         dispatch(addWine(wine))
