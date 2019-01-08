@@ -5,7 +5,7 @@ const About = () => {
     <div className="About Container">
     <h2>About Wine Store</h2>
 
-    <p> blah blah</p>
+    <p>Welcome to Wine Store! A virtual cellar for you to keep your wines.</p>
 
 
     </div>
