@@ -1,9 +1,11 @@
+import React from 'react';
+
 const About = () => {
   return (
-    <div>
+    <div className="About Container">
     <h2>About Wine Store</h2>
 
-    <p> blak blah</p>
+    <p> blah blah</p>
 
 
     </div>
