@@ -7,7 +7,6 @@ class Api::WinesController < ApplicationController
   end
 
   def create
-    binding.pry
     wine = Wine.new(wine_params)
     if wine.save
       render json: wine
