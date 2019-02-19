@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+
+// import Counter from './src/components/Counter'
+// import WineCard from './src/components/Winecard'
+//
 import {
   BrowserRouter as Router,
   Route,
@@ -8,6 +12,7 @@ import {
 import Wines from './Wines';
 import About from './About';
 import Recommendations from './Recommendations';
+
 import './App.css';
 
 
